@@ -1,10 +1,9 @@
-class Ellipse {
-
+class Ellipse(private val center: Point, private val majorRadius: Double, private val minorRadius: Double) {
     fun getArea(): Double {
-        return 0.0
+        return Math.PI * majorRadius * minorRadius
     }
 
-    fun moveElipse(xDelta: Double, yDelta: Double){
-
+    fun moveEllipse(xDelta: Double, yDelta: Double) {
+        center.movePoint(xDelta, yDelta)
     }
 }
