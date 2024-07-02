@@ -25,4 +25,19 @@ fun main() {
     val circle = Circle(centerCircle, 3.0)
     println("Circle area: ${circle.getArea()}")
     println("Circle center: (${centerCircle.x}, ${centerCircle.y})")
+    circle.moveEllipse(1.0, -0.5)
+
+    println("New center of circle after moving: (${centerCircle .x}, ${centerCircle .y})")
+
+    val centerEllipse = Point(2.0, 3.0)
+    val majorRadius = 5.0
+    val minorRadius = 3.0
+    val ellipse = Ellipse(centerEllipse, majorRadius, minorRadius)
+
+    println("Ellipse area: ${ellipse.getArea()}")
+    println("Original center of ellipse: (${centerEllipse.x}, ${centerEllipse.y})")
+
+    ellipse.moveEllipse(1.0, -0.5)
+
+    println("New center of ellipse after moving: (${centerEllipse.x}, ${centerEllipse.y})")
 }
