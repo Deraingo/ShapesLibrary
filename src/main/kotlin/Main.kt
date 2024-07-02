@@ -40,4 +40,12 @@ fun main() {
     ellipse.moveEllipse(1.0, -0.5)
 
     println("New center of ellipse after moving: (${centerEllipse.x}, ${centerEllipse.y})")
+
+    val rectanglePoint1 = Point(1.0, 2.0)
+    val rectanglePoint2 = Point(4.0, 5.0)
+    val rectangle = Rectangle(rectanglePoint1, rectanglePoint2)
+
+    println("Rectangle area: ${rectangle.getArea()}")
+    rectangle.moveRectangle(1.0, 1.0)
+    println("New points for rectangle after moving: (${rectanglePoint1.x}, ${rectanglePoint1.y}), (${rectanglePoint2.x}, ${rectanglePoint2.y})")
 }
