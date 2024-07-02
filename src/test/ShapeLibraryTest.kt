@@ -13,7 +13,7 @@ class ShapeLibraryTest {
         val point2 = Point(4.0, 5.0)
         val point3 = Point(2.0, 6.0)
         val triangle = Triangle(listOf(point1, point2, point3))
-        assertEquals(3.0, triangle.getArea()) // Adjust expected value based on your actual triangle
+        assertEquals(3.0, triangle.getArea())
     }
 
     fun testEllipseArea() {
@@ -54,7 +54,6 @@ class ShapeLibraryTest {
         val point2 = Point(4.0, 5.0)
         val point3 = Point(2.0, 6.0)
         val triangle = Triangle(listOf(point1, point2, point3))
-        // Adjust expected value based on your actual triangle
         assertEquals(3.0, triangle.getArea())
     }
 
