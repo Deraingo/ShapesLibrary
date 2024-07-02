@@ -11,7 +11,7 @@ fun main() {
     println("Line AB length: ${lineAB.getLength()}")
     println("Slope of line AB: ${lineAB.getSlope()}")
 
-    println("Triangle area: ${triangle.area}")
+    println("Triangle area: ${triangle.getArea()}")
     println("Original points: (${point1.x}, ${point1.y}), (${point2.x}, ${point2.y}), (${point3.x}, ${point3.y})")
 
     triangle.moveTriangle(1.0, 1.0)

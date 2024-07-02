@@ -1,9 +1,8 @@
 import kotlin.math.abs
 
 class Triangle(val points: List<Point>) {
-    var area: Double = calculateArea()
 
-    private fun calculateArea(): Double {
+    fun getArea(): Double {
         val x1 = points[0].x
         val y1 = points[0].y
         val x2 = points[1].x
